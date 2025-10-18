@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlqmwrl07w1fk"]
+
+[ext_resource type="Script" uid="uid://bp5pydkuyf1pi" path="res://addons/controlhud/scripts/control_hud_button.gd" id="1_0h4ci"]
+[ext_resource type="StyleBox" uid="uid://dpgb02iw46vmh" path="res://addons/controlhud/resources/stylebox_chbtn_normal.tres" id="2_8wnmd"]
+
+[node name="ControlHUDButton" type="MarginContainer"]
+custom_minimum_size = Vector2(60, 60)
+anchors_preset = -1
+anchor_right = 0.052083332
+anchor_bottom = 0.09259259
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_0h4ci")
+metadata/_edit_use_anchors_ = true
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_8wnmd")
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+text = "btn"
+horizontal_alignment = 1
+vertical_alignment = 1
